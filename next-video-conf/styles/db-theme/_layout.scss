@@ -1,0 +1,149 @@
+@use "sass:map";
+@use "sass:math";
+
+// Flex system
+.top-index{
+  z-index: 100 !important;
+}
+
+.low-index{
+  z-index: 0 !important;
+}
+
+[class^="container"] {
+  position: relative;
+  z-index: 1;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 1.25rem);
+  padding-left: var(--bs-gutter-x, 1.25rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-top: var(--bs-gutter-y);
+}
+
+.row{
+  -bs-gutter-x: 2.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+[class^="col"] {
+  position: relative;
+}
+
+.col {
+  flex: 1 0 0;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    flex: 0 0 auto;
+    width: percentage($i/12);
+  }
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+// Positions
+.position-relative {
+  position: relative !important;
+}
+
+// Margins and Paddings
+@for $i from 0 through 16 {
+  .me-#{$i} {
+    margin-right: #{map-get($spacers, $i)} !important;
+  }
+}
+.me-auto {
+  margin-right: auto !important; }
+
+@for $i from 0 through 16 {
+  .m-#{$i} {
+    margin: #{map-get($spacers, $i)} !important;
+  }
+}
+
+.m-auto {
+  margin: auto !important;
+}
+
+@for $i from 0 through 16 {
+  .mx-#{$i} {
+    margin-right: #{map-get($spacers, $i)} !important;
+    margin-left: #{map-get($spacers, $i)} !important;
+  }
+}
+
+.my-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+@for $i from 0 through 16 {
+  .mb-#{$i} {
+    margin-bottom: #{map-get($spacers, $i)} !important;
+  }
+}
+.mb-auto {
+  margin-bottom: auto !important;
+}
+
+@for $i from 0 through 16 {
+  .mt-#{$i} {
+    margin-top: #{map-get($spacers, $i)} !important;
+  }
+}
+.mt-auto {
+  margin-top: auto !important;
+}
+
+// Negative margin top
+@for $i from 0 through 16 {
+  .mt-n#{$i} {
+    margin-top: -#{map-get($spacers, $i)} !important;
+  }
+}
+.mt-n-auto {
+  margin-top: auto !important;
+}
+
+// Negative margin left
+@for $i from 1 through 16 {
+  .ms-n#{$i} {
+    margin-left: -#{map-get($spacers, $i)} !important;
+  }
+}
+
+@for $i from 1 through 16 {
+  .py-#{$i} {
+    $val: map-get($spacers, $i);
+    padding-top: #{$val} !important;
+    padding-bottom:  #{$val} !important;
+  }
+}

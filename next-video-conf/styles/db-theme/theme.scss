@@ -1,0 +1,138 @@
+@import "variables";
+@import "type";
+@import "forms";
+//@import "vendor/feather";
+@import "layout";
+@import "navbar";
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family-base;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $black;
+  background-color: $white;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(22, 28, 45, 0);
+  overflow-x: hidden;
+
+}
+
+// General layout styles
+//
+.align-items-center{
+  align-items: center !important;
+}
+
+div{
+  display: block;
+}
+
+.section{
+
+}
+
+.d-none{
+  display: none !important;
+}
+
+.border-primary {
+  border-color: $primary !important;
+}
+
+.shadow-light-lg {
+  //box-shadow: 0 1.5rem 4rem rgb(22 28 45 / 5%) !important;
+}
+
+// Backgrounds
+.bg-black{
+  background-color: $black !important;
+}
+
+.bg-dark {
+  background-color: $gray-900 !important;
+  .footer-brand{
+    filter: brightness(0) invert(1);
+  }
+}
+
+// Images and shapes
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.shape {
+  position: absolute;
+  pointer-events: none;
+}
+.shape-bottom {
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.shape-top {
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.shape:not([class*="shape-blur"]) {
+  overflow: hidden;
+}
+
+.shape:not([class*="shape-blur"]) > * {
+  transform: scale(2);
+}
+.shape-fluid-x > * {
+  width: 100%;
+  height: auto;
+}
+
+.shape-bottom > * {
+  transform-origin: top center;
+}
+
+.shape-flip-x {
+  transform: scaleX(-2.5);
+}
+
+.overlay-black::before {
+  background-color: $black;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+}
+
+
+.overlay {
+  position: relative;
+}
+
+.overlay-60::before {
+  opacity: 0.6;
+}
+
+
+.bg-cover {
+  background: no-repeat center center;
+  background-size: cover;
+}
+
+
