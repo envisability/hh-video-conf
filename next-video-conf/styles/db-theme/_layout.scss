@@ -2,6 +2,10 @@
 @use "sass:math";
 
 // Flex system
+.d-flex {
+  display: flex!important;
+}
+
 .top-index{
   z-index: 100 !important;
 }
@@ -17,6 +21,12 @@
   padding-left: 1.25rem;
 }
 
+
+[class^=col] {
+  position: relative;
+}
+
+
 .container,
 .container-fluid,
 .container-sm,
@@ -30,14 +40,6 @@
   margin-left: auto;
 }
 
-.row > * {
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) / 2);
-  padding-left: calc(var(--bs-gutter-x) / 2);
-  margin-top: var(--bs-gutter-y);
-}
 
 .row{
   -bs-gutter-x: 2.5rem;
@@ -47,6 +49,15 @@
   margin-top: calc(var(--bs-gutter-y) * -1);
   margin-right: calc(var(--bs-gutter-x) / -2);
   margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(2.5rem / 2);
+  padding-left: calc(2.5rem / 2);
+  margin-top: var(--bs-gutter-y);
 }
 
 [class^="col"] {
@@ -91,6 +102,10 @@
 
 .m-auto {
   margin: auto !important;
+}
+
+.ms-auto {
+  margin-left: auto!important;
 }
 
 @for $i from 0 through 16 {
@@ -146,4 +161,37 @@
     padding-top: #{$val} !important;
     padding-bottom:  #{$val} !important;
   }
+}
+
+// Card
+
+.card-img, .card-img-bottom, .card-img-top {
+  width: 100%;
+}
+
+a.card, a.card-body, a.card-footer, a.card-meta {
+  color: inherit;
+}
+
+.card-meta {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2rem 1.5rem;
+}
+
+.card-body,
+.card-footer,
+.card-img,
+.card-img-end,
+.card-img-start,
+.card-img-top,
+.card-meta {
+  min-height: 1px;
+  position: relative;
+}
+
+.card-meta-divider {
+  margin: 0 0 1.5rem;
+  width: 100%;
 }

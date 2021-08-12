@@ -5,7 +5,7 @@ import { X, Menu } from 'react-feather';
 // import classes from '../../styles/main-header.module.css';
 
 function MainHeader() {
-    const logoUrl = process.env.PUBLIC_URL + '/img/brand.svg';
+    const logoUrl = '/images/xlogo.png';
     // @ts-ignore
     const [collapsed, setCollapsed] = useState(false);
 
@@ -47,8 +47,8 @@ function MainHeader() {
                             </li>
                             <li>
                                 <h6 className={`dropdown-header`}>
-                                    <Link onClick={toggle}  href='/services'
-                                          className="dropdown-item">Services</Link>
+                                    <Link onClick={toggle}  href='/blog'
+                                          className="dropdown-item">Blog</Link>
                                 </h6>
                             </li>
                             <li>
