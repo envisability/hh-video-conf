@@ -27,7 +27,7 @@ function SearchBar(props) {
                 >
                     <Search />
                  </span>
-                <input className="form-control border-0 px-1"
+                <input className="form-control border-0 px-1 custom_padding"
                        type="text"
                        value={searchTerm}
                        onChange={updateSearchTerm}

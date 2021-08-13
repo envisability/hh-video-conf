@@ -18,7 +18,7 @@ function Search(props) {
                                     Tags:
                                 </h6>
                             </div>
-                            <div className="col ms-n5">
+                            <div className="col ms-n5 tags_margin_lft">
                                 {
                                     tags.map(tag =>
                                         <Link href={`search/tag/${tag}`} >
