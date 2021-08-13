@@ -257,3 +257,21 @@ img, svg {
   .tags_margin_lft {margin-left: 15px !important;}
   .custom_padding {padding: 0.8125rem .5em;}
 }
+
+.container.container_wdth {
+  max-width: 1040px;
+}
+
+.rounded {
+    border-radius: 0.375rem !important;
+} 
+
+.img_shadow { 
+  box-shadow: 0 1.5rem 4rem rgb(22 28 45 / 10%) !important;
+}
+
+.pad_10 {
+  padding: 10px;
+}
+
+.pad_lft_ryt { padding: 0 10px;}
