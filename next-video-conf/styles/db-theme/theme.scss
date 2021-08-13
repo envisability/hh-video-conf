@@ -275,3 +275,30 @@ img, svg {
 }
 
 .pad_lft_ryt { padding: 0 10px;}
+
+.avatar-lg {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 0.75rem;
+}
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.pt-md-11 {
+    padding-top: 6rem !important;
+}
+.ms-n5 {
+    margin-left: -1.5rem !important;
+}
+
+.fs-sm {
+    font-size: 0.9375rem !important;
+}

@@ -11,7 +11,7 @@ function PostPreview(props) {
     return (
         <div className="col-12 col-md-6 col-lg-4 d-flex">
             <div className="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
-                <a className="card-img-top" href="#!">
+                <a className="card-img-top" href={'/blog/'+blogPost.slug}>
                     <img src={coverImageFile.url} alt={blogPost.coverImage.fields.title}
                          className="card-img-top" />
                         <div className="position-relative">

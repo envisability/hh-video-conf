@@ -21,15 +21,15 @@ function Index(props) {
                         </div>
                     </div>
 
-                    <div class="row gx-4">
-                      <div class="col-4 pad_10">
+                    <div className="row gx-4">
+                      <div className="col-4 pad_10">
 
                         <img src={'/images/photos/photo-16.jpg'}
                                      className="img-fluid rounded img_shadow"
                                      alt="..." />
 
                       </div>
-                      <div class="col-3 pad_10">
+                      <div className="col-3 pad_10">
 
                         <img src={'/images/photos/photo-17.jpg'}
                                      className="img-fluid rounded img_shadow mb-4"
@@ -40,17 +40,17 @@ function Index(props) {
                                      alt="..." />
 
                       </div>
-                      <div class="col-5 pad_10">
+                      <div className="col-5 pad_10">
 
-                        <div class="row gx-5 mb-4">
-                          <div class="col-5 pad_lft_ryt">
+                        <div className="row gx-5 mb-4">
+                          <div className="col-5 pad_lft_ryt">
 
                             <img src={'/images/photos/photo-19.jpg'}
                                      className="img-fluid rounded img_shadow"
                                      alt="..." />
 
                           </div>
-                          <div class="col-7 pad_lft_ryt">
+                          <div className="col-7 pad_lft_ryt">
 
                             <img src={'/images/photos/photo-20.jpg'}
                                      className="img-fluid rounded img_shadow"
