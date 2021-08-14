@@ -45,7 +45,7 @@ function SearchBar(props) {
                     }}
                 >
                 <Link href={`/blog/search/${searchTerm}`}>
-                    <a className={'btn btn-sm btn-primary'}>Search</a>
+                    <a className={'btn btn-sm btn-primary'}>GO</a>
                 </Link>
             </span>
             </div>

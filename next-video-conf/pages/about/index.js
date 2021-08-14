@@ -1,11 +1,12 @@
 import React, {Fragment} from 'react';
+import Donate from "../../components/home/donate";
 
 
 function Index(props) {
 
     return (
         <Fragment>
-            <section className="pt-4 pt-md-11">
+            <section className="pt-4 pt-md-8">
                 <div className="container container_wdth">
                     <div className="row align-items-center">
                         <div className="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
@@ -17,7 +18,7 @@ function Index(props) {
                             <p className="lead text-center text-md-start text-muted mb-6 mb-lg-8">
                                 Our focus is always on finding the best people to work with. Our bar is high, but you look ready to take on the challenge.
                             </p>
-                      
+
                         </div>
                     </div>
 
@@ -69,6 +70,7 @@ function Index(props) {
                   </div>
                 </div>
             </section>
+            <Donate />
         </Fragment>
 
     );

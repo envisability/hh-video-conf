@@ -7,7 +7,7 @@ function Process(props) {
             <div className="section bg-black pt-12 pt-md-15 pb-8 pb-md-11">
                 <div className="container">
                     <div className="row justify-content-between align-items-center mb-5">
-                        <div className="col-12 col-md-4 order-md-2 text-center mt-5">
+                        <div className="col-12 col-md-4 order-md-2 text-center mt-8">
                             <img className="img-fluid w-75 w-md-100 mb-6 mb-md-0"
                                  style={{maxWidth:"50%"}}
                                  src={mainMedia} alt="..." />

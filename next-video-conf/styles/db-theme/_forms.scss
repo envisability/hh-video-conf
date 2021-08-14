@@ -13,7 +13,7 @@
 
 .card-body {
   flex: 1 1 auto;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
 }
 
 .card-body,
@@ -95,11 +95,59 @@ input[type="file"] {
   overflow: hidden;
 }
 
+
+// Form floating
+.form-floating {
+  position: relative;
+}
+
+
+
+.form-floating > .form-control, .form-floating > .form-select {
+  height: calc(3.5rem + 2px);
+  padding: 1rem 1.25rem;
+}
+
+.form-control-flush, .form-floating > .form-control-flush {
+  padding-left: 0;
+  padding-right: 0;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-radius: 0;
+}
+
+.form-floating > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 1rem 1.25rem;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
 nput, button, select, optgroup, textarea {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+.form-floating > label {
+  color: #869AB8;
+}
+
+.form-floating > .form-control-flush ~ label {
+  padding-left: 0;
+  padding-right: 0;
+  border-width: 0;
+}
+
+label {
+  display: inline-block;
 }
 
 
@@ -178,7 +226,16 @@ fieldset:disabled .btn {
   width: 1em;
 }
 
+.lift {
+  transition: box-shadow .25s ease, transform .25s ease;
+}
 
+.btn-primary-desat {
+  color: #FFFFFF;
+  background-color: #6C8AEC;
+  border-color: #6C8AEC;
+  box-shadow: none;
+}
 
 .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
   border-bottom-left-radius: 0;

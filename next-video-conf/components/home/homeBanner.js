@@ -3,7 +3,7 @@ import React, {Fragment} from 'react';
 function HomeBanner(props) {
     return (
         <Fragment>
-            <section className="pt-4 pt-md-11">
+            <section className="pt-4 pt-md-8">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
@@ -26,14 +26,14 @@ function HomeBanner(props) {
 
                             </div>
 
-                            <div className="text-center text-md-start">
+                            <div className="text-center text-md-start mb-5">
                                 <a href="overview.html" className="btn btn-primary shadow lift me-3">
-                                    View all pages
+                                    Schedule Now
                                     <i className="fe fe-arrow-right d-none d-md-inline ms-3"></i>
                                 </a>
-                                <a href="docs/index.html" className="btn btn-primary-soft lift top-index">
-                                    Schedule Now!
-                                </a>
+                                {/*<a href="docs/index.html" className="btn btn-primary-soft lift top-index">*/}
+                                {/*    Schedule Now!*/}
+                                {/*</a>*/}
                             </div>
 
                         </div>
@@ -41,13 +41,13 @@ function HomeBanner(props) {
                     </div>
                 </div>
             </section>
-            <div className="position-relative mt-10 mt-md-n15 low-index">
-                <div className="shape shape-bottom shape-fluid-x svg-shim text-black">
-                    <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M720 125L2160 0h720v250H0V125h720z" fill="currentColor"></path>
-                    </svg>
-                </div>
-            </div>
+            {/*<div className="position-relative mt-10 mt-md-n15 low-index">*/}
+            {/*    <div className="shape shape-bottom shape-fluid-x svg-shim text-black">*/}
+            {/*        <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
+            {/*            <path d="M720 125L2160 0h720v250H0V125h720z" fill="currentColor"></path>*/}
+            {/*        </svg>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
         </Fragment>
     );
 }

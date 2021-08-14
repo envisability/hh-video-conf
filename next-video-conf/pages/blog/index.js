@@ -35,8 +35,7 @@ function Index(props) {
     const banner = {
         backgroundImage: 'images/covers/cover-3.jpg',
         title: 'Some title',
-        subtitle: 'Keep up to date with what we\'re working on! ' +
-            'Landkit is an ever evolving theme ' +
+        subtitle: 'Keep up to date with what is going on ! ' +
             'with regular updates'
     }
 
@@ -44,7 +43,7 @@ function Index(props) {
         <Fragment>
             <ImageTextBanner banner={ banner } />
             <div className="position-relative">
-                <div className="shape shape-bottom shape-fluid-x text-light">
+                <div className="shape shape-bottom shape-fluid-x text-light" style={{marginBottom:"-5px"}}>
                     <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z"
                               fill="currentColor"></path>

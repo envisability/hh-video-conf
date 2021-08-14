@@ -6,7 +6,7 @@ import Layout from "../components/layout/layout";
 import {Fragment} from "react";
 import HomeBanner from "../components/home/homeBanner";
 import Process from "../components/home/process";
-import ContactForm from "../components/home/contactForm";
+import Donate from "../components/home/donate";
 
 export default function HomePage() {
     const featuredEvents = getFeaturedEvents();
@@ -14,7 +14,8 @@ export default function HomePage() {
         <Fragment>
             <HomeBanner />
             <Process />
-            <ContactForm />
+            <Donate />
+            {/*<ContactForm />*/}
         </Fragment>
     )
 }
