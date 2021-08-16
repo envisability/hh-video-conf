@@ -3,7 +3,7 @@ import React, {Fragment} from 'react';
 function HomeBanner(props) {
     return (
         <Fragment>
-            <section className="pt-4 pt-md-8">
+            <section className="py-8 py-md-11 border-bottom">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">

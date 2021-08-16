@@ -22,7 +22,7 @@ function MainHeader() {
                 <div className="container">
                     <Link  href='/'>
                         <a className={`navbar-brand`}>
-                            <img src={logoUrl} /></a>
+                            <img className={`navbar-brand-img`} src={logoUrl} /></a>
                     </Link>
                     <button  onClick={toggle} className={`navbar-toggler`} >
                         <span className={`navbar-toggler-icon `}>
@@ -34,29 +34,32 @@ function MainHeader() {
                                 className={`navbar-toggler top-index`} >
                             <X className={`fe fe-x`}/>
                         </button>
-                        <ul className={`navbar-items-container`}>
+                        <ul className={`navbar-nav ms-auto`}>
                             {/*<li className={`nav-item-group dropdown mb-2`}>*/}
                             {/*    <h3>*/}
                             {/*        Navigate*/}
                             {/*    </h3>*/}
                             {/*</li>*/}
-                            <li>
-                                <h6 className={`dropdown-header`}>
-                                    <Link onClick={toggle} href={'/'}
-                                          className="dropdown-item">Home</Link>
-                                </h6>
+                            <li className={`nav-item dropdown`}>
+                              <Link onClick={toggle} href={'/'}>
+                                <a className={`nav-link`}>
+                                  Home
+                                </a>
+                              </Link>
                             </li>
-                            <li>
-                                <h6 className={`dropdown-header`}>
-                                    <Link onClick={toggle}  href='/blog'
-                                          className="dropdown-item">Blog</Link>
-                                </h6>
+                            <li className={`nav-item dropdown`}>
+                              <Link onClick={toggle}  href='/blog'>
+                                <a className={`nav-link`}>
+                                  Blog
+                                </a>
+                              </Link>
                             </li>
-                            <li>
-                                <h6 className={`dropdown-header`}>
-                                    <Link onClick={toggle}
-                                          className="dropdown-item" href='/about'>About</Link>
-                                </h6>
+                            <li className={`nav-item dropdown`}>
+                              <Link onClick={toggle} href='/about'>
+                              <a className={`nav-link`}>
+                                  About
+                              </a>
+                              </Link>
                             </li>
                             {/*<li>*/}
                             {/*    <h6 className={`dropdown-header`}>*/}
@@ -65,6 +68,12 @@ function MainHeader() {
                             {/*    </h6>*/}
                             {/*</li>*/}
                         </ul>
+
+                        <Link  href='/'>
+                          <a className={`navbar-btn btn btn-sm btn-primary lift ms-auto`}>
+                            Buy now
+                          </a>
+                        </Link>
                     </div>
                 </div>
             </nav>
