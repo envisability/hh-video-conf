@@ -271,10 +271,10 @@ img, svg {
 }
 
 .pad_10 {
-  padding: 10px;
+  padding: 10px !important;
 }
 
-.pad_lft_ryt { padding: 0 10px;}
+.pad_lft_ryt { padding: 0 10px !important;}
 
 .avatar-lg {
     width: 2.25rem;
@@ -301,4 +301,69 @@ img, svg {
 
 .fs-sm {
     font-size: 0.9375rem !important;
+}
+
+@media (max-width: 767px) {
+  .pad_lft_35 { padding-left: 35px !important;}
+  .ms-md-0 {
+      margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+      flex: 0 0 auto;
+      width: 33.33333%;
+  }
+  .order-md-2 {
+      order: 2 !important;
+  }
+  .order-md-1 {
+      order: 1 !important;
+  }
+  .col-md-7 {
+      flex: 0 0 auto;
+      width: 58.33333%;
+  }
+  .mb-md-5 {
+      margin-bottom: 1.5rem !important;
+  }
+  .col-md-12 {
+      flex: 0 0 auto;
+      width: 100%;
+  }
+
+  .d-md-block {
+      display: block !important;
+  }
+  .mb-md-0 {
+      margin-bottom: 0 !important;
+  }
+}
+
+.bg-gray-900-50 {
+    background-color: rgba(27, 42, 78, 0.5) !important;
+}
+
+.btn-rounded-circle.btn-sm, .btn-group-sm > .btn-rounded-circle.btn {
+    padding-left: 0.5625rem;
+    padding-right: 0.5625rem;
+}
+
+.btn-rounded-circle {
+    border-radius: 50rem;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+.pad_ryt_30 { padding-right: 30px !important; }
+
+@media (min-width: 1024px) {
+
+  .row > * {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
